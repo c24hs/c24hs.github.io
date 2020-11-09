@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hillary's International Sweets</title>
-
-	<style type="text/css">
 	
-
-	.flag{
-		width:400px;
-		height:250px;
-		margin:5px;
-		background-repeat:no-repeat;
-		background-size:contain;
-		transition:1.5s;
-		position:relative;
-		display:inline-block;
-		border: 4px solid pink;
-	}
-
-	.flag:hover{
-		transition:1.5s;
-			transform:rotate(360deg);
-	}
-		#america{
-			background-image: url(https://miro.medium.com/max/2470/0*o0-6o1W1DKmI5LbX.png);
-			
-		}
-		#america:hover{
-			background-image:url(https://thefoodcharlatan.com/wp-content/uploads/2018/11/Nanas-Famous-Homemade-Peppermint-Ice-Cream-6-e1543277868775.jpg);
+	<style>
+		
+		body{
+			background-image:url("https://i.etsystatic.com/15350345/r/il/22411b/1540790487/il_570xN.1540790487_8dbf.jpg");
+			background-repeat:no-repeat;
+			background-image:contain;
+			background-size:cover;
 		}
 
-		#france{
-			background-image: url(https://media.istockphoto.com/photos/flag-of-france-horizontal-picture-id481690890?k=6&m=481690890&s=612x612&w=0&h=QWb1hnM9YOkrWWRGUZ4YGfS0lj5CH7uRkqHmz8aCBk0=);
-			
+		table{
+			width:100%;
+			font-size:30px;
 		}
 
-		#france:hover{
-			background-image:url(https://devilsfoodkitchen.com/wp-content/uploads/2019/02/VIDEO_CHOCOLATE_ECLAIR_1-1.jpg);
+		td{
+			width:33%;
+			height:400px;
+			text-align:center;
+			color:#03c2fc;
+		
 		}
 
-		#italy{
-			background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png);
-			
+		div{
+			border:5px;
+			border-color:white;
+			width:90%;
+			height:90%;
+			background-color:white;
+			opacity:50%;
 		}
 
-		#italy:hover{
-			background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM5HN60ZW_qe7_MG05A_m2Eozq51j79H_s6Q&usqp=CAU);
+		a{
+			text-decoration:none;
+			color:#03c2fc;
 		}
 
-		#britain{
-			background-image:url(https://images-na.ssl-images-amazon.com/images/I/612-eO6gP3L._AC_SL1500_.jpg);
+		#heading{
+			color:#03c2fc;
+			text-align:center;
 		}
 
-		#britain:hover{
-			background-image:url(https://flockler.com/thumbs/sites/192/triple-layer-berry-victoria-sponge_s600x600_c2115x1235_l0x953.jpg);
-		}
 	</style>
 
 </head>
 <body>
 
-	<p id="title"> International Sweets <p>
+	<h1 id="heading">Hillary Silver</h1>
 
-	<div class="flag" id="america"></div>
+	<table>
+		<!-- table row, table data (cell) -->
+		<tr>
+			
+			<td>
+				<div class="menu">
+					About Me
+				</div>
+			</td>
+			
+			<td>
+				<a href="journal.html">
+					<div class="menu">
+						Journal
+					</div>
+				</a>
+			</td>
+			
+			<td>
+				<div class="menu">
+					Projects
+				</div>
+			</td>
+		
+		</tr>
+	</table>
 
-	<div class="flag" id="france"></div>
-
-	<div class="flag" id="italy"></div>
-
-	<div class="flag" id="britain"></div>
 
 </body>
 </html>
