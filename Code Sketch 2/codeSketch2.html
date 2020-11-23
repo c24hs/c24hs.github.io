@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+	
+	<style type="text/css">
+		#president{
+			width:600px;
+			height:600px;
+			background-image:url("https://static.billboard.com/files/2020/10/04-Ariana-Grande-positions-screenshot-2020-billboard-1548-1603466410-compressed.jpg");
+			background-repeat:no-repeat;
+			background-size:contain;
+		}
+
+		body{
+			background-color:#ffc7f1;
+		}
+		
+		h1{
+			color:black;
+			font-size:50px;
+		}
+	</style>
+
 </head>
+
 <body>
 
+	<h1>
+		Click on the President!
+	</h1>
+
+	<div id="president"></div>
+
+	<script type="text/javascript">
+		var pres = document.getElementById("president");
+		
+		function switchPic() {
+
+		pres.addEventListener("click", function(event)
+			{
+				pres.style.backgroundImage = "url(https://www.nme.com/wp-content/uploads/2018/11/thankunext-ari-new.png)";
+		}
+			)
+	}
+		switchPic();
+
+
+	</script>
+
 </body>
+
 </html>
