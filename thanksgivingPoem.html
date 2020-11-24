@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		p{
+			font-size:30px;
+			font-family:courier;
+			font-size:30px;
+		}
+
+		.boxes{
+			width:400px;
+			height:200px;
+			border:1px dotted blue;
+		}
+	</style>
+</head>
+<body>
+
+
+	<p>
+		Happy Thanksgiving! What fall treat should you make this holiday?
+	</p>
+
+	<div id="random1" class="boxes"></div>
+
+	<p>
+		What holiday movie should you watch this season?
+	</p>
+
+	<div id="random2" class="boxes"></div>
+
+	<script type="text/javascript">
+		
+		var box1 = document.getElementById('random1');
+
+		var box2 = document.getElementById('random2');
+		
+		var words = [
+			"Pumpkin pie",
+			"pecan pie",
+			"maple pumpkin cornbread",
+			"hot apple cider",
+			"cranberry lemon bars",
+			]
+
+		var movies = [
+			"It's the Great Pumpkin, Charlie Brown",
+			"It's a Wonderful Life",
+			"Home Alone",
+			"The Grinch who Stole Christmas",
+			"White Christmas",
+
+		]
+
+		box1.addEventListener("click", function(){
+				var x = Math.round(Math.random()*5);
+
+				box1.innerText = words[x];
+				changeColor();
+		})
+
+		box2.addEventListener("click", function(){
+				var x = Math.round(Math.random()*5);
+
+				box2.innerText = movies[x];
+				changeColor();
+		})
+
+		var colors = ["#fcbaff", "#dd99ff", "#38b9ff", "#bafff0"]
+
+		function changeColor(){
+			var x = Math.round(Math.random()*3)
+			document.body.style.backgroundColor = colors[x]
+		}
+
+
+	</script>
+
+</body>
+</html>
