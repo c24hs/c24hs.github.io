@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.weekend{
+			color:red;
+			width:200px;
+			height:200px;
+			margin:5px;
+			background-image:url("https://thumbs.gfycat.com/DentalWhimsicalAlligatorgar-small.gif");
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div></div>
+	<a></a>
+
+	<script type="text/javascript">
+		function makeWeekend (x) {
+			let box = document.createElement("div");
+			document.body.appendChild(box);
+			//this is adding in a class instead of doing it
+			//in the actual div
+			box.classList.add("weekend");
+			box.innerText=x;
+
+		};
+
+		for(var i=0; i<5000; i=i+1){makeWeekend(i)}
+
+		//the number in this function stands for millisecond
+		//setInterval(makeWeekend, 100)
+		
+	</script>
+
+</body>
+
+</html>
