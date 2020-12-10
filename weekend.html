@@ -5,8 +5,9 @@
 	<title></title>
 
 	<style type="text/css">
+		
 		.weekend{
-			color:red;
+			color:#ff94fa;
 			width:200px;
 			height:200px;
 			margin:5px;
@@ -15,6 +16,9 @@
 			background-repeat:no-repeat;
 			display:inline-block;
 		}
+
+
+
 	</style>
 </head>
 
@@ -26,9 +30,11 @@
 	<script type="text/javascript">
 		function makeWeekend (x) {
 			let box = document.createElement("div");
+			//this is adding the div (through the box var)
 			document.body.appendChild(box);
 			//this is adding in a class instead of doing it
 			//in the actual div
+			//this means you can style it in css
 			box.classList.add("weekend");
 			box.innerText=x;
 
