@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	
+	<style type="text/css">
+		#nugget{
+			width:200px;
+			height:200px;
+			background-image:url("nugget.png");
+			background-color:#a8dbff;
+			background-size:contain;
+			background-repeat:no-repeat;
+			background-position:center;
+			position:absolute;
+			left:30px;
+			top:100px;
+			/*this is the animation section*/
+			animation-name:dance;
+			animation-duration:2s;
+			animation-iteration-count: infinite;
+
+		}
+
+		/*this is like stop motion animation
+		one keyframe is one position in the animation*/
+		/*@keyframes is telling the style section we're
+		talking about an animation*/
+		@keyframes dance{
+			0%{transform:rotate(-90deg);}
+
+			/*this would be at one second*/
+			50%{transform:rotate(90deg);}
+
+			100%{transform:rotate(-90deg);}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="nugget">
+		
+	</div>
+
+</body>
+
+
+</html>
