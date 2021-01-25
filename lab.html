@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<script>
+		
+		function sayHi () {
+			console.log("hi Hillary")
+		}
+		//you can do scroll in place of click
+		//go into the document, run this function (event listener) on a click and run sayHi
+		document.addEventListener("click", sayHi);
+
+		//if you type in console "hillary.eyeColor", it will return "blue", etc.
+		var hillary = {
+			height:5.6,
+			eyeColor:"blue",
+			nice:true,
+
+			//to run this, put in console hillary.activity() to call the function
+			activity: function () {
+				console.log("I like to sing.")
+			}
+		}
+
+
+	</script>
+
+</body>
+
+</html>
