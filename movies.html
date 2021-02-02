@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<style>
+		.movies{
+			width:100px;
+			height:100px;
+			/*anything above 50% makes it a circle*/
+			border-radius:50%;
+			border:1px solid black;
+			position:relative;
+			display:inline-block;
+			/*this is making the innertext white and transparent so it looks like it's not there*/
+			color:rgba(0,0,0,1);
+		}
+
+		.romCom{
+			background-color:#ffabf8;
+		}
+
+		.disneyAnimated{
+			background-color:#4fd9ff;
+		}
+
+		.disneyFamilyNonAnimated{
+			background-color:#c285ff;
+		}
+
+		.action{
+			background-color:#a1ffdc;
+		}
+
+		.drama{
+			background-color:#b5bbff;
+		}
+
+		.musicalsPlays{
+			background-color:#ff40ec;
+		}
+
+		.comedy{
+			background-color:#ffbeab;
+		}
+
+		.misc{
+			background-color:#88ff78;
+		}
+
+		.streamer{
+			width:300px;
+			height:200px;
+		}
+
+		.disneyPlus{
+			background-color:#63afff;
+		}
+
+		.primeVideo{
+			background-color:#000070;
+		}
+
+		.hulu{
+			background-color:#07d100;
+		}
+
+		.netflix{
+			background-color:#eb0000;
+		}
+
+		.hboMax{
+			background-color:#870fff;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<!-- two sections of circles, one with all the movies and the color is the genre, and one with a circle for each streaming service and the size is how many movies -->
+	<h1>All of the movies I've watched during the pandemic🍿🎬</h1>
+
+	<h2>Categorized by genre</h2>
+	<script>
+		//add event listener so when you click on the circle, it will show the movie's name
+		
+		function makeMovie (x) {
+			let movie = document.createElement("div");
+			document.body.appendChild(movie);
+			movie.classList.add("movies");
+			movie.innerText = x
+			//you could add another class and make the function for each genre
+			
+			var number = x;
+			if (number < 12) {
+				movie.classList.add("romCom");
+				movie.innerText="romCom";
+			}
+
+			//Disney: 24
+			else if(11 < number && number < 36) {
+				movie.classList.add("disneyAnimated");
+			}
+
+			//Family: 9
+			else if(35 < number && number < 45) {
+				movie.classList.add("disneyFamilyNonAnimated");
+			}
+
+			//Action: 8
+			else if(44 < number && number < 53) {
+				movie.classList.add("action");
+			}
+
+			//Drama: 11
+			else if(52 < number && number < 63) {
+				movie.classList.add("drama");
+			}
+
+			//Musicals/Plays: 7
+			else if(62 < number && number < 69) {
+				movie.classList.add("musicalsPlays");
+			}
+
+			//Comedy: 6
+			else if(68 < number && number < 74) {
+				movie.classList.add("comedy");
+			}
+
+			//Misc.: 4
+			else if(73 < number && number < 78) {
+				movie.classList.add("misc");
+			}
+
+
+		};
+
+		//this makes 81 circle divs
+		for (let i=0; i<81; i=i+1) {makeMovie(i)}
+	
+	</script>
+
+	<h2>Where I streamed them</h2>
+
+	<img class="streamer" src="disney+.png">
+	<img class="streamer" src="primeVideo.png">
+	<img class="streamer" src="hulu.png">
+	<img class="streamer" src="netflix.png">
+	<img class="streamer" src="hboMax.jpg">
+	<br>
+
+	<script>
+		function makeMovie (x) {
+			let movie = document.createElement("div");
+			document.body.appendChild(movie);
+			movie.classList.add("movies");
+			movie.innerText = x
+		
+			//not ex
+			var number = x
+			if (number < 24) {
+				movie.classList.add("disneyPlus");
+			}
+
+			else if (23 < number && number < 34) {
+				movie.classList.add("primeVideo");
+			}
+
+			//just to test
+			else if (33 < number && number < 43) {
+				movie.classList.add("hulu");
+			}
+
+			else if (42 < number && number < 56) {
+				movie.classList.add("netflix");
+			}
+
+			//why is this stopping the loop
+			else if (55 < number && number < 57) {
+				movie.classList.add("hboMax");
+			}
+		};
+
+		for (let i=0; i<81; i=i+1) {makeMovie(i)}
+
+	</script>
+
+</body>
+
+</html>
