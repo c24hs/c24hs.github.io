@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.square{
+			width:200px;
+			height:200px;
+			background-color:pink;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class = "square">Click into the console to see a randomizer in action</div>
+
+	<script>
+		
+		function makeNumber() {
+			//this will take a number between 0 and 1, multiply it by 4, and then round
+			x = Math.floor(Math.random() * 4);
+
+			console.log(x)
+		}
+
+		makeNumber();
+
+		var colors = ["pink", "blue", "purple"]
+
+		var musicals = ["Mean Girls", "Les Miserables", "The Prom"]
+
+		console.log(colors[x]);
+
+		console.log(musicals[x]);
+
+	</script>
+
+
+</body>
+
+</html>
