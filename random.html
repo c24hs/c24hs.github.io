@@ -3,36 +3,93 @@
 
 <head>
 	<style>
-		.square{
-			width:200px;
-			height:200px;
-			background-color:pink;
+		body{
+			background-color:red;
 		}
+
+		.square{
+			width:1000px;
+			height:1000px;
+			background-image:url("heart.png");
+			background-size:contain;
+			background-repeat:no-repeat;
+			text-align:center;
+		}
+
+		#text{
+			position:relative;
+			top:15%;
+			font-size:30px;
+		}
+
+		.boxes{
+			width:350px;
+			height:50px;
+			border:1px solid black;
+			position:relative;
+			top:16%;
+			left:35%;
+			font-size:30px;
+		}
+
+		#movieQuestion{
+			position:relative;
+			top:16%;
+			font-size:30px;
+			left:4%;
+		}
+
+		#keepClick{
+			position:relative;
+			top:17%;
+			font-size:28px;
+		}
+
+		#signOff{
+			position:relative;
+			top:18%;
+			font-size:30px;
+		}
+
 	</style>
 </head>
 
 <body>
 
-	<div class = "square">Click into the console to see a randomizer in action</div>
+	<!-- this is the one that the heart is inside -->
+	<div class = "square">
+		<div id="text"> Happy Valentines Day!
+			<br> I love you even more than</div>
+			<div id="random1" class="boxes"></div>
+			<div id="movieQuestion">What romantic movie should you watch?</div>
+			<div id = "random2" class = "boxes"></div>
+			<div id="keepClick">Keep clicking to see more!</div>
+			<div id="signOff">
+			Love,
+			<br> Hillary🥰</div>
+	</div>
 
-	<script>
-		
-		function makeNumber() {
-			//this will take a number between 0 and 1, multiply it by 4, and then round
-			x = Math.floor(Math.random() * 4);
+	<script type="text/javascript">
 
-			console.log(x)
-		}
+		var box1 = document.getElementById('random1');
 
-		makeNumber();
+		var words = ["ice cream", "french fries", "puppies", "rom coms", "Hamilton", "potatoes", "Disney movies", "days off from school", "pizza"]
 
-		var colors = ["pink", "blue", "purple"]
+		box1.addEventListener("click", function(){
+			var x = Math.round(Math.random()*8);
 
-		var musicals = ["Mean Girls", "Les Miserables", "The Prom"]
+			box1.innerText = words[x];
+		})
 
-		console.log(colors[x]);
+		var box2 = document.getElementById('random2');
 
-		console.log(musicals[x]);
+		var movies = ["The Princess Diaries: A Royal Engagement", "Sleepless in Seattle", "Pretty Woman", "You've Got Mail"]
+
+		box2.addEventListener("click", function(){
+			var x = Math.round(Math.random()*3);
+
+			box2.innerText = movies[x];
+		})
 
 	</script>
 

@@ -6,7 +6,7 @@
 	<style>
 		.movies{
 			width:100px;
-			height:100px;
+			height:65px;
 			/*anything above 50% makes it a circle*/
 			border-radius:50%;
 			border:1px solid black;
@@ -14,6 +14,8 @@
 			display:inline-block;
 			/*this is making the innertext white and transparent so it looks like it's not there*/
 			color:rgba(0,0,0,1);
+			text-align:center;
+			padding-top:35px;
 		}
 
 		.romCom{
@@ -90,6 +92,7 @@
 			document.body.appendChild(movie);
 			movie.classList.add("movies");
 			movie.innerText = x
+			movie.id = "circle" + x;
 			//you could add another class and make the function for each genre
 			
 			var number = x;
@@ -139,6 +142,7 @@
 		//this makes 81 circle divs
 		for (let i=0; i<81; i=i+1) {makeMovie(i)}
 	
+		circle0.innerText = "test";
 	</script>
 
 	<h2>Where I streamed them</h2>
@@ -156,6 +160,7 @@
 			document.body.appendChild(movie);
 			movie.classList.add("movies");
 			movie.innerText = x
+			movie.id = "streamCircle" + x;
 		
 			//not ex
 			var number = x
@@ -183,6 +188,7 @@
 		};
 
 		for (let i=0; i<81; i=i+1) {makeMovie(i)}
+
 
 	</script>
 

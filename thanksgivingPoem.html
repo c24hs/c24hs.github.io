@@ -54,14 +54,15 @@
 		]
 
 		box1.addEventListener("click", function(){
-				var x = Math.round(Math.random()*5);
+				var x = Math.round(Math.random()*4);
 
 				box1.innerText = words[x];
 				changeColor();
 		})
 
+		//its *4 because the arrays are 0-4 (start counting at 0)
 		box2.addEventListener("click", function(){
-				var x = Math.round(Math.random()*5);
+				var x = Math.round(Math.random()*4);
 
 				box2.innerText = movies[x];
 				changeColor();
