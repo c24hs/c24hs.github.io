@@ -96,18 +96,19 @@
 			//you could add another class and make the function for each genre
 			
 			var number = x;
-			if (number < 12) {
+			//Rom coms: 9
+			if (number < 9) {
 				movie.classList.add("romCom");
 				movie.innerText="romCom";
 			}
 
 			//Disney: 24
-			else if(11 < number && number < 36) {
+			else if(8 < number && number < 33) {
 				movie.classList.add("disneyAnimated");
 			}
 
-			//Family: 9
-			else if(35 < number && number < 45) {
+			//Family: 12
+			else if(32 < number && number < 45) {
 				movie.classList.add("disneyFamilyNonAnimated");
 			}
 
@@ -117,22 +118,22 @@
 			}
 
 			//Drama: 11
-			else if(52 < number && number < 63) {
+			else if(52 < number && number < 64) {
 				movie.classList.add("drama");
 			}
 
 			//Musicals/Plays: 7
-			else if(62 < number && number < 69) {
+			else if(63 < number && number < 71) {
 				movie.classList.add("musicalsPlays");
 			}
 
 			//Comedy: 6
-			else if(68 < number && number < 74) {
+			else if(70 < number && number < 77) {
 				movie.classList.add("comedy");
 			}
 
 			//Misc.: 4
-			else if(73 < number && number < 78) {
+			else if(76 < number) {
 				movie.classList.add("misc");
 			}
 
@@ -142,7 +143,73 @@
 		//this makes 81 circle divs
 		for (let i=0; i<81; i=i+1) {makeMovie(i)}
 	
-		circle0.innerText = "test";
+		//this section puts the movie names in their circles
+		circle0.innerText = "The Princess Diaries";
+
+		circle1.innerText = "The Princess Diaries: A Royal Engagement";
+
+		circle2.innerText = "10 Things I Hate About You";
+
+		circle3.innerText = "Pretty in Pink";
+
+		circle4.innerText = "Pretty Woman";
+
+		circle5.innerText = "The Kissing Booth 2";
+
+		circle6.innerText = "When Harry Met Sally";
+
+		circle7.innerText = "The Wedding Planner";
+
+		circle8.innerText = "Bride and Prejudice";
+
+		circle9.innerText = "Cinderella";
+
+		circle10.innerText = "The Hunchback of Notre Dame";
+
+		circle11.innerText = "Cinderella II";
+
+		circle12.innerText = "Aladdin (1992)";
+
+		circle13.innerText = "The Fox and the Hound";
+
+		circle14.innerText = "Bambi";
+
+		circle15.innerText = "The Lady and the Tramp";
+
+		circle16.innerText = "Cinderella III";
+
+		circle17.innerText = "The Emperor's New Groove";
+
+		circle18.innerText = "Alice in Wonderland";
+
+		circle19.innerText = "The Sword in the Stone";
+
+		circle20.innerText = "Sleeping Beauty";
+
+		circle21.innerText = "Peter Pan";
+
+		circle22.innerText = "Atlantis: the Lost Civilization";
+
+		circle23.innerText = "The Rescuers";
+	
+		circle24.innerText = "The Little Mermaid: Ariel's Beginning";
+
+		circle25.innerText = "The Aristocats";
+
+		circle26.innerText = "The Little Mermaid II";
+
+		circle27.innerText = "Snow White and the Seven Dwarfs";
+
+		circle28.innerText = "Cinderella";
+
+		circle29.innerText = "Hercules";
+
+		circle30.innerText = "Frozen 2";
+
+		circle31.innerText = "The Princess and the Frog";
+
+		circle32.innerText = "Robin Hood";
+
 	</script>
 
 	<h2>Where I streamed them</h2>
