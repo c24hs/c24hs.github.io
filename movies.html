@@ -19,32 +19,65 @@
 			font-size:22px;
 		}
 
+		
+		#romComKey{
+			color:#ffabf8;
+		}
+
 		.romCom{
 			background-color:#ffabf8;
+		}
+
+		#disneyAnimatedKey{
+			color:#4fd9ff;
 		}
 
 		.disneyAnimated{
 			background-color:#4fd9ff;
 		}
 
+		#disneyFamilyNonAnimatedKey{
+			color:#c285ff;
+		}
+
 		.disneyFamilyNonAnimated{
 			background-color:#c285ff;
+		}
+
+		#actionKey{
+			color:#a1ffdc;
 		}
 
 		.action{
 			background-color:#a1ffdc;
 		}
 
+		#dramaKey{
+			color:#b5bbff;
+		}
+
 		.drama{
 			background-color:#b5bbff;
+		}
+
+		#musicalsPlaysKey{
+			color:#ff40ec;
 		}
 
 		.musicalsPlays{
 			background-color:#ff40ec;
 		}
 
+		#comedyKey{
+			color:#ffbeab;
+		}
+
 		.comedy{
 			background-color:#ffbeab;
+		}
+
+		#miscKey{
+			color:#88ff78;
 		}
 
 		.misc{
@@ -64,9 +97,6 @@
 			background-color:#000070;
 		}
 
-		.hulu{
-			background-color:#07d100;
-		}
 
 		.netflix{
 			background-color:#eb0000;
@@ -74,6 +104,10 @@
 
 		.hboMax{
 			background-color:#870fff;
+		}
+
+		.other{
+			background-color:#d89eff;
 		}
 
 	</style>
@@ -85,6 +119,25 @@
 	<h1>All of the movies I've watched during the pandemic🍿🎬</h1>
 
 	<h2>Categorized by genre</h2>
+	
+	<h3>Key</h3> 
+	
+	<p id="romComKey">Rom coms</p>
+
+	<p id="disneyAnimatedKey">Disney animated movies</p>
+
+	<p id="disneyFamilyNonAnimatedKey">Disney non-animated and other family movies</p>
+
+	<p id="actionKey">Action movies</p>
+
+	<p id="dramaKey">Dramas</p>
+
+	<p id="musicalsPlaysKey">Musicals and Plays</p>
+
+	<p id="comedyKey">Comedies</p>
+
+	<p id="miscKey">Miscellaneous</p>
+
 	<script>
 		//add event listener so when you click on the circle, it will show the movie's name
 		
@@ -318,7 +371,7 @@
 
 	<img class="streamer" src="./moviePics/disney+.png">
 	<img class="streamer" src="./moviePics/primeVideo.png">
-	<img class="streamer" src="./moviePics/hulu.png">
+	<!-- <img class="streamer" src="./moviePics/hulu.png"> -->
 	<img class="streamer" src="./moviePics/netflix.png">
 	<img class="streamer" src="./moviePics/hboMax.jpg">
 	<br>
@@ -333,26 +386,29 @@
 		
 			//not ex
 			var number = x
-			if (number < 24) {
+			if (number < 34) {
 				movie.classList.add("disneyPlus");
 			}
 
-			else if (23 < number && number < 34) {
+			else if (33 < number && number < 69) {
 				movie.classList.add("primeVideo");
 			}
 
-			//just to test
-			else if (33 < number && number < 43) {
-				movie.classList.add("hulu");
-			}
+			// else if (40 < number && number < 76) {
+			// 	movie.classList.add("hulu");
+			// }
 
-			else if (42 < number && number < 56) {
+			else if (68 < number && number < 76) {
 				movie.classList.add("netflix");
 			}
 
 			//why is this stopping the loop
-			else if (55 < number && number < 57) {
+			else if (75 < number && number < 79) {
 				movie.classList.add("hboMax");
+			}
+
+			else if (78 < number && number < 81) {
+				movie.classList.add("other");
 			}
 		};
 
